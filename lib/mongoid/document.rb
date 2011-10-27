@@ -60,6 +60,7 @@ module Mongoid #:nodoc:
     end
 
     # Freezes the internal attributes of the document.
+    # scivi: do not freeze anymore. We don't wan't frozen hashes.
     #
     # @example Freeze the document
     #   document.freeze
@@ -68,7 +69,7 @@ module Mongoid #:nodoc:
     #
     # @since 2.0.0
     def freeze
-      attributes.freeze
+      #attributes.freeze
       self
     end
 
